@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 36 100% 98%;
+  --foreground: 24 21% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 21% 13%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 24 21% 13%;
+  --primary: 23 92% 52%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 38 74% 93%;
+  --secondary-foreground: 24 42% 18%;
+  --muted: 34 47% 93%;
+  --muted-foreground: 26 16% 43%;
+  --accent: 145 22% 88%;
+  --accent-foreground: 146 31% 17%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 31 33% 86%;
+  --input: 31 33% 86%;
+  --ring: 23 92% 52%;
+  color-scheme: light;
+}
+
+.dark {
+  --background: 24 22% 8%;
+  --foreground: 34 54% 94%;
+  --card: 24 18% 11%;
+  --card-foreground: 34 54% 94%;
+  --popover: 24 18% 11%;
+  --popover-foreground: 34 54% 94%;
+  --primary: 24 92% 58%;
+  --primary-foreground: 22 30% 10%;
+  --secondary: 25 22% 18%;
+  --secondary-foreground: 34 54% 94%;
+  --muted: 24 16% 17%;
+  --muted-foreground: 33 20% 70%;
+  --accent: 146 18% 21%;
+  --accent-foreground: 139 36% 88%;
+  --border: 24 14% 22%;
+  --input: 24 14% 22%;
+  --ring: 24 92% 58%;
+  color-scheme: dark;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.22);
+}
+
+.glass {
+  @apply border bg-card/95 shadow-sm backdrop-blur-md dark:bg-card/90;
+}
+
+.section-pad {
+  @apply py-16 md:py-24;
+}
+
+.premium-card {
+  @apply rounded-[1.25rem] border bg-card shadow-sm transition duration-300;
+}
+
+.premium-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px -32px rgba(154, 86, 32, 0.5);
+}
+
+.warm-radial {
+  background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary) / 0.24));
+}
+
+.skeleton {
+  @apply relative overflow-hidden rounded-2xl bg-muted;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, hsl(var(--background) / 0.68), transparent);
+  animation: shimmer 1.6s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
