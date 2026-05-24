@@ -1,6 +1,6 @@
 # Yumma Catering
 
-Production-ready Next.js 15 application for an Indonesian catering and event ecosystem: daily catering subscription, wedding/event inquiry, vendor directory, AI assistant, and protected admin dashboard.
+Production-ready Next.js 15 application for an Indonesian catering and event organizer: daily catering subscription, wedding/event inquiry, vendor directory, AI assistant, and protected admin dashboard.
 
 ## Stack
 

@@ -22,7 +22,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-background">
         <div className="container grid min-h-[calc(100vh-4.75rem)] items-center gap-10 pb-16 pt-10 md:gap-12 lg:grid-cols-[1.03fr_0.97fr] lg:pb-20 lg:pt-14">
           <FadeIn>
-            <Badge className="mb-5 px-3.5 py-1.5">Catering harian, wedding, dan event ecosystem</Badge>
+            <Badge className="mb-5 px-3.5 py-1.5">Catering harian, wedding, dan event organizer</Badge>
             <h1 className="max-w-4xl text-[2.65rem] font-black leading-[1.04] tracking-tight text-balance sm:text-5xl md:text-6xl">
               Catering rumahan premium yang terasa personal, siap tampil di hari besar.
             </h1>
@@ -105,7 +105,7 @@ export default function HomePage() {
             {[
               [ShieldCheck, "Tetap mudah via WhatsApp", "Pelanggan lama tetap bisa pesan tanpa login, tanpa friction, dan tetap dibantu admin."],
               [CalendarDays, "Menu dan inquiry lebih rapi", "Calendar, paket, event inquiry, vendor, dan galeri siap menjadi sistem operasi Yumma."],
-              [HeartHandshake, "Ecosystem event", "Catering, dekor, dokumentasi, MC, makeup, dan partner event berada dalam satu pengalaman."]
+              [HeartHandshake, "organizer event", "Catering, dekor, dokumentasi, MC, makeup, dan partner event berada dalam satu pengalaman."]
             ].map(([Icon, title, text]) => (
               <Card key={String(title)} className="premium-card">
                 <CardContent className="p-7">
@@ -144,7 +144,7 @@ export default function HomePage() {
 
       <section className="section-pad">
         <div className="container">
-          <SectionHeading eyebrow="Preview ecosystem" title="Galeri rasa, partner pilihan, dan peluang kolaborasi." />
+          <SectionHeading eyebrow="Preview organizer" title="Galeri rasa, partner pilihan, dan peluang kolaborasi." />
           <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="grid grid-cols-2 gap-4">
               {gallery.slice(0, 4).map((item, index) => (

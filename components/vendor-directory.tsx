@@ -19,7 +19,7 @@ export function VendorDirectory() {
   return (
     <section className="section-pad warm-radial">
       <div className="container">
-        <SectionHeading eyebrow="Event partnership ecosystem" title="Partner vendor pilihan untuk event yang terasa effortless." description="Filter kategori, lihat portfolio preview, lalu lanjut ke Instagram vendor atau konsultasi paket lengkap bersama Yumma." />
+        <SectionHeading eyebrow="Event partnership organizer" title="Partner vendor pilihan untuk event yang terasa effortless." description="Filter kategori, lihat portfolio preview, lalu lanjut ke Instagram vendor atau konsultasi paket lengkap bersama Yumma." />
         <div className="mx-auto mb-8 flex max-w-5xl gap-2 overflow-x-auto rounded-full border border-white/70 bg-white/70 p-2 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-card/70">
           {categories.map((category) => (
             <button key={category} onClick={() => setActive(category)} className={`h-10 flex-none rounded-full px-4 text-sm font-black transition ${active === category ? "bg-primary text-primary-foreground shadow-lg shadow-orange-500/20" : "text-muted-foreground hover:bg-muted"}`}>
